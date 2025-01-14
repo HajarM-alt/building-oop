@@ -1,4 +1,4 @@
-import org.ies.building.components.ApartmentReader;
+import org.ies.building.components.ApartamentReader;
 
 import org.ies.building.components.BuildingApp1;
 
@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
         var ownerReader = new OwnerReader(scanner);
-        var apartmentReader = new ApartmentReader(scanner, ownerReader);
+        var apartmentReader = new ApartamentReader(scanner, ownerReader);
         var buildingReader = new BuildingReader(scanner, apartmentReader);
         var buildingApp = new BuildingApp1(scanner, buildingReader);
 
